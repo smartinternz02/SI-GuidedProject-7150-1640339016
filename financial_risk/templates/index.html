@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Financial risk prediction</title>
+</head>
+
+
+<body background="https://previews.123rf.com/images/file404/file4041308/file404130800034/21376203-financial-risk-icon.jpg" text="black">
+
+ <div class="login">
+	<center><h1>financial risk Prediction</h1></center>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+<h1>Please enter the following details</h1>
+
+
+</style></head>
+
+
+      <label>income:</label>  
+      <input type="number"  name="income" placeholder="income" required="required" /><br>
+ <br>
+ 
+ 
+
+      <label>age:</label>  
+      <input type="number" min="18"  max="95"  name="age" placeholder="age" required="required" />
+<br>
+     
+      
+   
+<br>
+    <label> loan:</label>  
+      <input type="number"   name="loan" placeholder="loan" required="required" />
+
+
+<br><br>
+
+
+<button type="submit" class="btn btn-primary btn-block btn-large" style="height:30px;width:200px">Predict</button>
+
+    </form>
+<br>
+   
+
+   {{ prediction_text }}
+
+
+  <br>
+  <br>
+  <img src="data:image/png;base64,{{url_3}}" alt="Submit Form" height="180" width="233" onerror="this.style.display='none'"/>
+  <img src="data:image/png;base64,{{url_1}}" alt="Submit Form" height="180" width="233" onerror="this.style.display='none'"/>
+  <img src="data:image/png;base64,{{url_4}}" alt="Submit Form" height="180" width="233" onerror="this.style.display='none'"/>
+  <br>
+  <br>
+  <img src="data:image/png;base64,{{url_2}}" alt="Submit Form" height="150" width="711" onerror="this.style.display='none'"/>
+  
+ </div>
+
+
+</body>
+</html>
